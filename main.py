@@ -2,11 +2,12 @@ import multiprocessing_task
 import threading_task
 import async_task
 import generate_numbers
+import multiprocessing
 
 def main():
     # Step 1: Generate numbers file
     print("Generating numbers.txt file...")
-    generate_numbers.generate_numbers_file("numbers.txt", 10000, 100000, 1000000)
+    generate_numbers.generate_numbers_file("num_file.txt", 100, 0, 100)
     
     # Step 2: Read numbers from file
     with open("numbers.txt", "r") as f:
