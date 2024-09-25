@@ -10,7 +10,7 @@ def main():
     generate_numbers.generate_numbers_file("num_file.txt", 100, 0, 100)
     
     # Step 2: Read numbers from file
-    with open("numbers.txt", "r") as f:
+    with open("num_file.txt", "r") as f:
         numbers = [int(line.strip()) for line in f.readlines()]
 
     # Step 3: Run multiprocessing task to find primes
